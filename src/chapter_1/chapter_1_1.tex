@@ -1,0 +1,63 @@
+\section{Espacio vectorial normado}
+
+\begin{definition*}
+    Sea $X$ un espacio vectorial sobre $\mathbb{R}$ $\left(\mathbb{C}\right)$, $\left\|\phantom{\cdot}\right\|\colon X\to\mathbb{R}$ se llama norma real (compleja) en $X$ si:
+    \begin{enumerate}[i)]
+        \item
+
+              \begin{math}
+                  \left\|x\right\|=
+                  0\implies
+                  x=0
+              \end{math}.
+              Definida, separación.
+
+        \item
+
+              \begin{math}
+                  \left\|\lambda x\right\|=
+                  \left|\lambda\right|
+                  \left\|x\right\|
+                  \forall x\in X, \lambda\in\mathbb{R} \left(\mathbb{C}\right)
+              \end{math}.
+              Absolutamente Homogénea,
+              Homogeneidad Positiva.
+
+        \item
+
+              \begin{math}
+                  \left\|x+y\right\|\leq
+                  \left\|x\right\|+
+                  \left\|y\right\|
+                  \forall x, y\in X
+              \end{math}.
+              Desigualdad Triangular, Subaditiva.
+    \end{enumerate}
+    $\left\|x\right\|$ se llama norma de $x$.
+    $\left(X, \left\|\phantom{\cdot}\right\|\right)$ se llama espacio vectorial real (complejo) normado.
+\end{definition*}
+
+\begin{proposition*}
+    Sea $X$ un espacio vectorial normado.
+    Luego,
+    \begin{math}
+        x=0\implies
+        \left\|x\right\|=0
+    \end{math}
+\end{proposition*}
+
+\begin{proof}
+    \begin{align*}
+        \shortintertext{$x=0\implies$}
+        \left\|x\right\| & =\left\|0\right\|                \\
+                         & =\left\|0x\right\|               \\
+                         & = \left|0\right|\left\|x\right\| \\
+                         & = 0\left\|x\right\|              \\
+                         & =0
+    \end{align*}
+\end{proof}
+
+\begin{proposition*}
+    Sea $X$ un espacio vectorial normado.
+    Luego, $x\neq0\implies\left\|x\right\|\neq0$.
+\end{proposition*}
