@@ -1,7 +1,16 @@
 % arara: lualatex: {
 % arara: --> shell: no,
+% arara: --> draft: yes,
+% arara: --> interaction: batchmode
+% arara: --> }
+% arara: lualatex: {
+% arara: --> shell: no,
 % arara: --> draft: no,
 % arara: --> interaction: batchmode
+% arara: --> }
+% arara: clean: {
+% arara: --> extensions:
+% arara: --> ['aux','log','toc']      
 % arara: --> }
 \documentclass[a4paper]{scrbook}
 \usepackage[spanish]{babel}
