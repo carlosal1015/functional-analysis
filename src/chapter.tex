@@ -1,0 +1,549 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Espacio vectorial normado}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\abstract{Cada capítulo debe ir precedido de un resumen (no más de 200 palabras) que resuma el contenido.}
+
+\begin{definition}
+    Sea $X$ un espacio vectorial sobre
+    \begin{math}
+        \mathbb{R}
+        \left(
+        \mathbb{C}
+        \right)
+    \end{math},
+    \begin{math}
+        \left\|
+        \phantom{\cdot}
+        \right\|\colon
+        X\to
+        \mathbb{R}
+    \end{math}
+    se llama norma real (compleja) en $X$ si:
+    \begin{enumerate}[i)]
+        \item
+
+              \begin{math}
+                  \left\|
+                  x
+                  \right\|=
+                  0\implies
+                  x=
+                  0
+              \end{math}.
+              \hfill
+              Definida, Separación
+
+        \item
+
+              \begin{math}
+                  \left\|
+                  \lambda x
+                  \right\|=
+                  \left|
+                  \lambda
+                  \right|
+                  \left\|
+                  x
+                  \right\|
+                  \forall x\in X,
+                  \lambda\in\mathbb{R}
+                  \left(\mathbb{C}\right)
+              \end{math}.
+              \hfill
+              Absolutamente Homogénea,
+
+              \hfill
+              Homogeneidad Positiva
+
+        \item
+
+              \begin{math}
+                  \left\|
+                  x+y
+                  \right\|\leq
+                  \left\|
+                  x
+                  \right\|+
+                  \left\|
+                  y
+                  \right\|
+                  \forall x, y\in X
+              \end{math}.
+              \hfill
+              Desigualdad Triangular, Subaditiva.
+    \end{enumerate}
+
+    \begin{math}
+        \left\|
+        x
+        \right\|
+    \end{math}
+    se llama norma de $x$.
+    \begin{math}
+        \left(
+        X,
+        \left\|
+        \phantom{\cdot}
+        \right\|
+        \right)
+    \end{math}
+    se llama espacio vectorial real (complejo) normado.
+\end{definition}
+
+\section{Subespacio vectorial normado}
+
+% \clearpage
+\begin{prob}
+    \label{prob1}
+    Sea $X$ un espacio vectorial normado.
+    Luego,
+    \begin{math}
+        x=
+        0\implies
+        \left\|
+        x
+        \right\|=
+        0
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob2}
+    Sea $X$ un espacio vectorial normado.
+    Luego,
+    \begin{math}
+        x\neq
+        0\implies
+        \left\|
+        x
+        \right\|\neq
+        0
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob3}
+    Sea
+    \begin{math}
+        \left(
+        X,
+        \left\|
+        \phantom{\cdot}
+        \right\|
+        \right)
+    \end{math}
+    un espacio vectorial normado.
+    Luego:
+    \begin{math}
+        \left\|
+        x
+        \right\|\geq
+        0\,
+        \forall x\in X
+    \end{math}.
+    \hfill
+    Positiva
+\end{prob}
+
+\begin{prob}
+    \label{prob4}
+    Sea
+    \begin{math}
+        \left\|
+        \phantom{\cdot}
+        \right\|
+    \end{math}
+    una norma en $X$.
+    Luego,
+    \begin{math}
+        d\left(x,y\right)=
+        \left\|
+        x-y
+        \right\|
+    \end{math}
+    es una métrica en $X$.
+    Es decir, todo espacio vectorial normado es un espacio
+    métrico.
+    $d$ se llama métrica inducida por la norma
+    \begin{math}
+        \left\|
+        \phantom{\cdot}
+        \right\|
+    \end{math}.
+\end{prob}
+
+
+\begin{prob}
+    \label{prob5}
+    Sea
+    \begin{math}
+        \left(
+        X,
+        \left\|
+        \phantom{\cdot}
+        \right\|
+        \right)
+    \end{math}
+    un espacio vectorial normado.
+    Luego:
+    \begin{math}
+        \left\|
+        x
+        \right\|\geq
+        0\,\forall
+        x\in X
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob6}
+    Sean $X$ un espacio vectorial,
+    \begin{math}
+        \left\{
+        x_{1},
+        x_{2},
+        \dotsc,
+        x_{n}
+        \right\}\subset
+        X
+    \end{math}
+    linealmente independiente.
+    Si
+    \begin{math}
+        \left\|
+        \phantom{\cdot}
+        \right\|\colon
+        \left\langle
+        \left\{
+        x_{1},
+        x_{2},
+        \dotsc,
+        x_{n}
+        \right\}
+        \right\rangle\to
+        \mathbb{R}
+    \end{math}
+    donde
+    \begin{math}
+        \left\|
+        x
+        \right\|=
+        \sum_{k=1}^{n}
+        \left|
+        \lambda_{k}
+        \right|
+    \end{math}
+    y
+    \begin{math}
+        x=
+        \sum_{k=1}^{n}
+        \lambda_{k}x_{k}
+    \end{math},
+    entonces
+    \begin{math}
+        \left\|
+        x
+        \right\|\geq
+        0
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob7}
+    Sea $X$ un espacio vectorial normado.
+    Luego, $x\neq 0$ si y solo si $\left\|x\right\|>0$.
+\end{prob}
+
+\begin{prob}
+    \label{prob8}
+    Sea
+    \begin{math}
+        \left(
+        X,
+        \left\|
+        \phantom{\cdot}
+        \right\|
+        \right)
+    \end{math}
+    un espacio vectorial normado $n$-dimensional,
+    \begin{math}
+        \varphi\colon
+        \mathbb{R}^{n}\to
+        X
+    \end{math}
+    donde
+    \begin{math}
+        {\left\|x\right\|}_{\ast}=
+        \left\|
+        \varphi
+        \left(
+        x
+        \right)
+        \right\|
+    \end{math}.
+    Luego,
+    \begin{math}
+        {\left\|x\right\|}_{\ast}\geq
+        0
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob9}
+    Sean
+    \begin{math}
+        \left(
+        X,
+        \left\|
+        \phantom{\cdot}
+        \right\|
+        \right)
+    \end{math}
+    un espacio vectorial normado de dimensión $n$,
+    \begin{math}
+        \left\{
+        v_{1},\dotsc,
+        v_{n}
+        \right\}
+    \end{math}
+    una base de $X$,
+    \begin{math}
+        f\colon X\to\mathbb{R}^{n},
+    \end{math}
+    donde
+    \begin{math}
+        f\left(x\right)=
+        \left(
+        y_{1},
+        \dotsc,
+        y_{n}
+        \right)
+    \end{math},
+    \begin{math}
+        x=
+        \sum_{k=1}^{n}
+        y_{k}v_{k}
+    \end{math}.
+    Si
+    \begin{math}
+        {\left\|y\right\|}_{\ast}=
+        \left\|
+        f^{-1}
+        \left(y\right)
+        \right\|
+    \end{math},
+    entonces
+    \begin{math}
+        {\left\|y\right\|}_{\ast}\geq
+        0
+    \end{math}.
+\end{prob}
+
+\begin{prob}
+    \label{prob10}
+    Sean $X$ un espacio vectorial,
+    \begin{math}
+        \left\{
+        x_{1},
+        x_{2},
+        \dotsc,
+        x_{n}
+        \right\}\subset X
+    \end{math}
+    linealmente independiente.
+    Luego,
+    \begin{math}
+        \left\|
+        \phantom{\cdot}
+        \right\|\colon
+        \left\langle
+        \left\{
+        x_{1},
+        x_{2},
+        \dotsc,
+        x_{n}
+        \right\}
+        \right\rangle\to
+        \mathbb{R}
+    \end{math}
+    donde
+    \begin{math}
+        \left\|
+        x
+        \right\|=
+        \sum_{k=1}^{n}
+        \left|
+        \lambda_{k}
+        \right|
+    \end{math}
+    y
+    \begin{math}
+        x=
+        \sum_{k=1}^{n}
+        \lambda_{k}x_{k}
+    \end{math},
+    es una norma.
+\end{prob}
+
+\input{references}
+
+\section{Isomorfismo en espacio vectorial normado}
+
+\section{Distancia en espacio vectorial normado}
+
+\section{Diámetro de conjunto en espacio vectorial normado}
+
+\section{Bola en espacio vectorial normado}
+
+\section{Esfera en espacio vectorial normado}
+
+\section{Normas equivalentes en espacio vectorial normado}
+
+\section{Conjunto abierto en espacio vectorial normado}
+
+\section{Conjunto cerrado en espacio vectorial normado}
+
+\section{Vecindad en espacio vectorial normado}
+
+\section{Entorno en espacio vectorial normado}
+
+\section{Topología fuerte en espacio vectorial normado}
+
+\section{Punto interior en espacio vectorial normado}
+
+\section{Punto exterior en espacio vectorial normado}
+
+\section{Punto de frontera en espacio vectorial normado}
+
+\section{Punto aislado en espacio vectorial normado}
+
+\section{Punto de acumulación en espacio vectorial normado}
+
+\section{Conjunto Bolzano-Weierstrass en espacio vectorial normado}
+
+\section{Punto de clausura en espacio vectorial normado}
+
+\section{Conjunto separado en espacio vectorial normado}
+
+\section{Conjunto denso en espacio vectorial normado}
+
+\section{Espacio vectorial normado separable}
+
+\section{Lema de Riesz en espacio vectorial normado}
+
+\section{Sucesión en espacio vectorial normado}
+
+\section{Punto límite de sucesión en espacio vectorial normado}
+
+\section{Límite de sucesión en espacio vectorial normado}
+
+\section{Sucesión de Cauchy en espacio vectorial normado}
+
+\section{Teorema de Bolzano-Weierstrass para conjunto infinito en espacio vectorial normado finito dimensional}
+
+\section{Teorema de Bolzano-Weierstrass para sucesión en espacio vectorial normado finito dimensional}
+
+\section{Base de Schauder en espacio vectorial normado}
+
+\section{Base de Hilbert en espacio vectorial normado}
+
+\section{Función en espacio vectorial normado}
+
+\section{Isometría en espacio vectorial normado}
+
+\section{Función contraída en espacio vectorial normado}
+
+\section{Límite de función en espacio vectorial normado}
+
+\section{Función continua en espacio vectorial normado}
+
+\section{Función uniformemente continua en espacio vectorial normado}
+
+\section{Función homeomorfa en espacio vectorial normado}
+
+\section{Sucesión de funciones en espacio vectorial normado}
+
+\section{Límite de sucesión de funciones en espacio vectorial normado}
+
+\section{Serie de funciones en espacio vectorial normado}
+
+\section{Conjunto acotado en espacio vectorial normado}
+
+\section{Conjunto totalmente acotado en espacio vectorial normado}
+
+\section{Conjunto completo en espacio vectorial normado}
+
+\section{Función lineal continua en espacio vectorial normado}
+
+\section{Función lineal acotada en espacio vectorial normado}
+
+\section{Espacio de funciones lineales acotadas en espacio vectorial normado}
+
+\section{Colección puntualmente acotado en espacio vectorial normado}
+
+\section{Colección uniformemente acotado en espacio vectorial normado}
+
+\section{Espacio dual topológico en espacio vectorial normado}
+
+\section{Conjunto compacto en espacio vectorial normado}
+
+\section{Conjunto conexo en espacio vectorial normado}
+
+\section{Conjunto convexo en espacio vectorial normado}
+
+\chapter{Espacio de Banach}
+
+\section{Espacio de Banach}
+
+\chapter{Espacio producto interno}
+
+\section{Espacio producto interno}
+
+\section{Ortogonalidad en espacio producto interno}
+
+\section{Teorema de Pitágoras en espacio producto interno}
+
+\section{Desigualdad de Bessel en espacio producto interno}
+
+\chapter{Espacio de Hilbert}
+
+\section{Espacio de Hilbert}
+
+\section{Límite de sucesión espacio de Hilbert}
+
+\section{Teorema de Banach-Steinhaus en espacio de Hilbert}
+
+\section{Teorema de Representación de Riesz en espacio de Hilbert}
+
+\section{Límite débil de sucesión en espacio de Hilbert}
+
+\section{Teorema de descomposición ortogonal en espacio de Hilbert}
+
+\chapter{Teoremas importantes}
+
+\section{Teorema de extensión de Hahn-Banach en espacio vectorial}
+
+\section{Principio de Acotación Uniforme en espacio de Banach}
+
+\section{Teorema del gráfico cerrado en espacio de Banach}
+
+\section{Teorema de la función abierta en espacio de Banach}
+
+% \begin{theorem}
+%     Theorem text goes here.
+% \end{theorem}
+
+% \begin{proof}
+%     %\smartqed
+%     Proof text goes here.
+%     %\qed
+% \end{proof}
