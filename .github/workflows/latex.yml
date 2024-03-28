@@ -34,10 +34,11 @@ jobs:
           shell: bash
           run: |
             sudo chown -R gitpod:gitpod /work
-            cd /work
+            pushd /work/src
             arara book >/dev/null 2>&1
+            popd
             mkdir -p pdf
-            mv book.pdf pdf
+            mv src/book.pdf pdf
 
       - name: Check pdf files
         run: |
