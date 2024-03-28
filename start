@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# shellcheck disable=SC2164
+
+function show() {
+  echo "Checking version ... done!"
+  lualatex -v
+  arara -V
+}
+
+function run() {
+  git pull >/dev/null 2>&1
+  pushd src >/dev/null 2>&1
+  echo "Generating PDFs ..."
+  arara book >/dev/null 2>&1
+  popd >/dev/null 2>&1
+}
+
+function export() {
+  [ -d pdf ] || mkdir -p pdf
+  mv src/book.pdf pdf
+  echo "PDFs are in pdf directory"
+  ls pdf
+}
+
+#show
+run
+export

@@ -34,11 +34,7 @@ jobs:
           shell: bash
           run: |
             sudo chown -R gitpod:gitpod /work
-            pushd /work/src
-            arara book >/dev/null 2>&1
-            popd
-            mkdir -p pdf
-            mv src/book.pdf pdf
+            cd /work && ./start
 
       - name: Check pdf files
         run: |

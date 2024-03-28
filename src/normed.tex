@@ -2,438 +2,446 @@
 \label{intro} % Always give a unique label
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
-\abstract{Cada capítulo debe ir precedido de un resumen (no más de 200 palabras) que resuma el contenido.}
+\abstract{
+	Cada capítulo debe ir precedido de un resumen (no más de 200
+	palabras) que resuma el contenido.
+}
 
 \begin{definition}
-    Sea $X$ un espacio vectorial sobre
-    \begin{math}
-        \mathbb{R}
-        \left(
-        \mathbb{C}
-        \right)
-    \end{math},
-    \begin{math}
-        \left\|
-        \phantom{\cdot}
-        \right\|\colon
-        X\to
-        \mathbb{R}
-    \end{math}
-    se llama norma real (compleja) en $X$ si:
-    \begin{enumerate}[i)]
-        \item
+	Sea $X$ un espacio vectorial sobre
+	\begin{math}
+		\mathbb{R}
+		\left(
+		\mathbb{C}
+		\right)
+	\end{math},
+	\begin{math}
+		\left\|
+		\phantom{\cdot}
+		\right\|\colon
+		X\to
+		\mathbb{R}
+	\end{math}
+	se llama norma real (compleja) en $X$ si:
+	\begin{enumerate}[i)]
+		\item
 
-              \begin{math}
-                  \left\|
-                  x
-                  \right\|=
-                  0\implies
-                  x=
-                  0
-              \end{math}.
-              \hfill
-              Definida, Separación.
+		      \begin{math}
+			      \left\|
+			      x
+			      \right\|=
+			      0\implies
+			      x=
+			      0
+		      \end{math}.
+		      \hfill
+		      Definida, Separación.
 
-        \item
+		\item
 
-              \begin{math}
-                  \left\|
-                  \lambda x
-                  \right\|=
-                  \left|
-                  \lambda
-                  \right|
-                  \left\|
-                  x
-                  \right\|
-                  \forall x\in X,
-                  \lambda\in\mathbb{R}
-                  \left(\mathbb{C}\right)
-              \end{math}.
-              \hfill
-              Absolutamente Homogénea,
+		      \begin{math}
+			      \left\|
+			      \lambda x
+			      \right\|=
+			      \left|
+			      \lambda
+			      \right|
+			      \left\|
+			      x
+			      \right\|
+			      \forall x\in X,
+			      \lambda\in\mathbb{R}
+			      \left(\mathbb{C}\right)
+		      \end{math}.
+		      \hfill
+		      Absolutamente Homogénea,
 
-              \hfill
-              Homogeneidad Positiva.
+		      \hfill
+		      Homogeneidad Positiva.
 
-        \item
+		\item
 
-              \begin{math}
-                  \left\|
-                  x+y
-                  \right\|\leq
-                  \left\|
-                  x
-                  \right\|+
-                  \left\|
-                  y
-                  \right\|
-                  \forall x, y\in X
-              \end{math}.
-              \hfill
-              Desigualdad Triangular, Subaditiva.
-    \end{enumerate}
+		      \begin{math}
+			      \left\|
+			      x+y
+			      \right\|\leq
+			      \left\|
+			      x
+			      \right\|+
+			      \left\|
+			      y
+			      \right\|
+			      \forall x, y\in X
+		      \end{math}.
+		      \hfill
+		      Desigualdad Triangular, Subaditiva.
+	\end{enumerate}
 
-    \begin{math}
-        \left\|
-        x
-        \right\|
-    \end{math}
-    se llama norma de $x$.
-    \begin{math}
-        \left(
-        X,
-        \left\|
-        \phantom{\cdot}
-        \right\|
-        \right)
-    \end{math}
-    se llama espacio vectorial real (complejo) normado.
+	\begin{math}
+		\left\|
+		x
+		\right\|
+	\end{math}
+	se llama norma de $x$.
+	\begin{math}
+		\left(
+		X,
+		\left\|
+		\phantom{\cdot}
+		\right\|
+		\right)
+	\end{math}
+	se llama espacio vectorial real (complejo) normado.
 \end{definition}
 
 \section{Subespacio vectorial normado}
 
 % \clearpage
 \begin{prob}
-    \label{prob1}
-    Sea $X$ un espacio vectorial normado.
-    Luego,
-    \begin{math}
-        x=
-        0\implies
-        \left\|
-        x
-        \right\|=
-        0
-    \end{math}.
+	\label{prob1}
+	Sea $X$ un espacio vectorial normado.
+	Luego,
+	\begin{math}
+		x=
+		0\implies
+		\left\|
+		x
+		\right\|=
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob2}
-    Sea $X$ un espacio vectorial normado.
-    Luego,
-    \begin{math}
-        x\neq
-        0\implies
-        \left\|
-        x
-        \right\|\neq
-        0
-    \end{math}.
+	\label{prob2}
+	Sea $X$ un espacio vectorial normado.
+	Luego,
+	\begin{math}
+		x\neq
+		0\implies
+		\left\|
+		x
+		\right\|\neq
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob3}
-    Sea
-    \begin{math}
-        \left(
-        X,
-        \left\|
-        \phantom{\cdot}
-        \right\|
-        \right)
-    \end{math}
-    un espacio vectorial normado.
-    Luego:
-    \begin{math}
-        \left\|
-        x
-        \right\|\geq
-        0\,
-        \forall x\in X
-    \end{math}.
-    \hfill
-    Positiva
+	\label{prob3}
+	Sea
+	\begin{math}
+		\left(
+		X,
+		\left\|
+		\phantom{\cdot}
+		\right\|
+		\right)
+	\end{math}
+	un espacio vectorial normado.
+	Luego:
+	\begin{math}
+		\left\|
+		x
+		\right\|\geq
+		0\,
+		\forall x\in X
+	\end{math}.
+	\hfill
+	Positiva
 \end{prob}
 
 \begin{prob}
-    \label{prob4}
-    Sea
-    \begin{math}
-        \left\|
-        \phantom{\cdot}
-        \right\|
-    \end{math}
-    una norma en $X$.
-    Luego,
-    \begin{math}
-        d\left(x,y\right)=
-        \left\|
-        x-y
-        \right\|
-    \end{math}
-    es una métrica en $X$.
-    Es decir, todo espacio vectorial normado es un espacio
-    métrico.
-    $d$ se llama métrica inducida por la norma
-    \begin{math}
-        \left\|
-        \phantom{\cdot}
-        \right\|
-    \end{math}.
+	\label{prob4}
+	Sea
+	\begin{math}
+		\left\|
+		\phantom{\cdot}
+		\right\|
+	\end{math}
+	una norma en $X$.
+	Luego,
+	\begin{math}
+		d\left(x,y\right)=
+		\left\|
+		x-y
+		\right\|
+	\end{math}
+	es una métrica en $X$.
+	Es decir, todo espacio vectorial normado es un espacio métrico.
+	$d$ se llama métrica inducida por la norma
+	\begin{math}
+		\left\|
+		\phantom{\cdot}
+		\right\|
+	\end{math}.
 \end{prob}
 
 
 \begin{prob}
-    \label{prob5}
-    Sea
-    \begin{math}
-        \left(
-        X,
-        \left\|
-        \phantom{\cdot}
-        \right\|
-        \right)
-    \end{math}
-    un espacio vectorial normado.
-    Luego:
-    \begin{math}
-        \left\|
-        x
-        \right\|\geq
-        0\,\forall
-        x\in X
-    \end{math}.
+	\label{prob5}
+	Sea
+	\begin{math}
+		\left(
+		X,
+		\left\|
+		\phantom{\cdot}
+		\right\|
+		\right)
+	\end{math}
+	un espacio vectorial normado.
+	Luego:
+	\begin{math}
+		\left\|
+		x
+		\right\|\geq
+		0\,\forall
+		x\in X
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob6}
-    Sean $X$ un espacio vectorial,
-    \begin{math}
-        \left\{
-        x_{1},
-        x_{2},
-        \dotsc,
-        x_{n}
-        \right\}\subset
-        X
-    \end{math}
-    linealmente independiente.
-    Si
-    \begin{math}
-        \left\|
-        \phantom{\cdot}
-        \right\|\colon
-        \left\langle
-        \left\{
-        x_{1},
-        x_{2},
-        \dotsc,
-        x_{n}
-        \right\}
-        \right\rangle\to
-        \mathbb{R}
-    \end{math}
-    donde
-    \begin{math}
-        \left\|
-        x
-        \right\|=
-        \sum_{k=1}^{n}
-        \left|
-        \lambda_{k}
-        \right|
-    \end{math}
-    y
-    \begin{math}
-        x=
-        \sum_{k=1}^{n}
-        \lambda_{k}x_{k}
-    \end{math},
-    entonces
-    \begin{math}
-        \left\|
-        x
-        \right\|\geq
-        0
-    \end{math}.
+	\label{prob6}
+	Sean $X$ un espacio vectorial,
+	\begin{math}
+		\left\{
+		x_{1},
+		x_{2},
+		\dotsc,
+		x_{n}
+		\right\}\subset
+		X
+	\end{math}
+	linealmente independiente.
+	Si
+	\begin{math}
+		\left\|
+		\phantom{\cdot}
+		\right\|\colon
+		\left\langle
+		\left\{
+		x_{1},
+		x_{2},
+		\dotsc,
+		x_{n}
+		\right\}
+		\right\rangle\to
+		\mathbb{R}
+	\end{math}
+	donde
+	\begin{math}
+		\left\|
+		x
+		\right\|=
+		\sum_{k=1}^{n}
+		\left|
+		\lambda_{k}
+		\right|
+	\end{math}
+	y
+	\begin{math}
+		x=
+		\sum_{k=1}^{n}
+		\lambda_{k}x_{k}
+	\end{math},
+	entonces
+	\begin{math}
+		\left\|
+		x
+		\right\|\geq
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob7}
-    Sea $X$ un espacio vectorial normado.
-    Luego, $x\neq 0$ si y solo si $\left\|x\right\|>0$.
+	\label{prob7}
+	Sea $X$ un espacio vectorial normado.
+	Luego, $x\neq 0$ si y solo si
+	\begin{math}
+		\left\|
+		x
+		\right\|>
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob8}
-    Sea
-    \begin{math}
-        \left(
-        X,
-        \left\|
-        \phantom{\cdot}
-        \right\|
-        \right)
-    \end{math}
-    un espacio vectorial normado $n$-dimensional,
-    \begin{math}
-        \varphi\colon
-        \mathbb{R}^{n}\to
-        X
-    \end{math}
-    donde
-    \begin{math}
-        {\left\|x\right\|}_{\ast}=
-        \left\|
-        \varphi
-        \left(
-        x
-        \right)
-        \right\|
-    \end{math}.
-    Luego,
-    \begin{math}
-        {\left\|x\right\|}_{\ast}\geq
-        0
-    \end{math}.
+	\label{prob8}
+	Sea
+	\begin{math}
+		\left(
+		X,
+		\left\|
+		\phantom{\cdot}
+		\right\|
+		\right)
+	\end{math}
+	un espacio vectorial normado $n$-dimensional,
+	\begin{math}
+		\varphi\colon
+		\mathbb{R}^{n}\to
+		X
+	\end{math}
+	donde
+	\begin{math}
+		{\left\|x\right\|}_{\ast}=
+		\left\|
+		\varphi
+		\left(
+		x
+		\right)
+		\right\|
+	\end{math}.
+	Luego,
+	\begin{math}
+		{\left\|x\right\|}_{\ast}\geq
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob9}
-    Sean
-    \begin{math}
-        \left(
-        X,
-        \left\|
-        \phantom{\cdot}
-        \right\|
-        \right)
-    \end{math}
-    un espacio vectorial normado de dimensión $n$,
-    \begin{math}
-        \left\{
-        v_{1},\dotsc,
-        v_{n}
-        \right\}
-    \end{math}
-    una base de $X$,
-    \begin{math}
-        f\colon X\to\mathbb{R}^{n},
-    \end{math}
-    donde
-    \begin{math}
-        f\left(x\right)=
-        \left(
-        y_{1},
-        \dotsc,
-        y_{n}
-        \right)
-    \end{math},
-    \begin{math}
-        x=
-        \sum_{k=1}^{n}
-        y_{k}v_{k}
-    \end{math}.
-    Si
-    \begin{math}
-        {\left\|y\right\|}_{\ast}=
-        \left\|
-        f^{-1}
-        \left(y\right)
-        \right\|
-    \end{math},
-    entonces
-    \begin{math}
-        {\left\|y\right\|}_{\ast}\geq
-        0
-    \end{math}.
+	\label{prob9}
+	Sean
+	\begin{math}
+		\left(
+		X,
+		\left\|
+		\phantom{\cdot}
+		\right\|
+		\right)
+	\end{math}
+	un espacio vectorial normado de dimensión $n$,
+	\begin{math}
+		\left\{
+		v_{1},\dotsc,
+		v_{n}
+		\right\}
+	\end{math}
+	una base de $X$,
+	\begin{math}
+		f\colon X\to\mathbb{R}^{n},
+	\end{math}
+	donde
+	\begin{math}
+		f\left(x\right)=
+		\left(
+		y_{1},
+		\dotsc,
+		y_{n}
+		\right)
+	\end{math},
+	\begin{math}
+		x=
+		\sum_{k=1}^{n}
+		y_{k}v_{k}
+	\end{math}.
+	Si
+	\begin{math}
+		{\left\|y\right\|}_{\ast}=
+		\left\|
+		f^{-1}
+		\left(y\right)
+		\right\|
+	\end{math},
+	entonces
+	\begin{math}
+		{\left\|y\right\|}_{\ast}\geq
+		0
+	\end{math}.
 \end{prob}
 
 \begin{prob}
-    \label{prob10}
-    Sean $X$ un espacio vectorial,
-    \begin{math}
-        \left\{
-        x_{1},
-        x_{2},
-        \dotsc,
-        x_{n}
-        \right\}\subset X
-    \end{math}
-    linealmente independiente.
-    Luego,
-    \begin{math}
-        \left\|
-        \phantom{\cdot}
-        \right\|\colon
-        \left\langle
-        \left\{
-        x_{1},
-        x_{2},
-        \dotsc,
-        x_{n}
-        \right\}
-        \right\rangle\to
-        \mathbb{R}
-    \end{math}
-    donde
-    \begin{math}
-        \left\|
-        x
-        \right\|=
-        \sum_{k=1}^{n}
-        \left|
-        \lambda_{k}
-        \right|
-    \end{math}
-    y
-    \begin{math}
-        x=
-        \sum_{k=1}^{n}
-        \lambda_{k}x_{k}
-    \end{math},
-    es una norma.
+	\label{prob10}
+	Sean $X$ un espacio vectorial,
+	\begin{math}
+		\left\{
+		x_{1},
+		x_{2},
+		\dotsc,
+		x_{n}
+		\right\}\subset X
+	\end{math}
+	linealmente independiente.
+	Luego,
+	\begin{math}
+		\left\|
+		\phantom{\cdot}
+		\right\|\colon
+		\left\langle
+		\left\{
+		x_{1},
+		x_{2},
+		\dotsc,
+		x_{n}
+		\right\}
+		\right\rangle\to
+		\mathbb{R}
+	\end{math}
+	donde
+	\begin{math}
+		\left\|
+		x
+		\right\|=
+		\sum_{k=1}^{n}
+		\left|
+		\lambda_{k}
+		\right|
+	\end{math}
+	y
+	\begin{math}
+		x=
+		\sum_{k=1}^{n}
+		\lambda_{k}x_{k}
+	\end{math},
+	es una norma.
 \end{prob}
 
 \begin{prob}
-    \label{prob11}
-    Sean
+	\label{prob11}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob12}
-    Sean
+	\label{prob12}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob13}
-    Sean
+	\label{prob13}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob14}
-    Sean
+	\label{prob14}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob15}
-    Sean
+	\label{prob15}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob16}
-    Sean
+	\label{prob16}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob17}
-    Sean
+	\label{prob17}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob18}
-    Sean
+	\label{prob18}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob19}
-    Sean
+	\label{prob19}
+	Sean
 \end{prob}
 
 \begin{prob}
-    \label{prob20}
-    Sean
+	\label{prob20}
+	Sean
 \end{prob}
 
 \input{references}
