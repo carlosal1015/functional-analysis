@@ -13,15 +13,7 @@
 % arara: --> ['aux','idx','ind','log','toc']
 % arara: --> }
 %%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% sample root file for the chapters of your "monograph"
-%
-% Use this file as a template for your own input.
-%
-%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[graybox,envcountchap,sectrefs]{svmono}
 
 % choose options for [] as required from the list
@@ -51,8 +43,6 @@
                        % please use the style svind.ist with
                        % your makeindex program
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \date{\today}
 
 \begin{document}
@@ -62,7 +52,7 @@
 \subtitle{-- Ejercicios resueltos --}
 \maketitle
 
-\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
 
 \include{dedication}
 \include{foreword}
@@ -71,14 +61,12 @@
 
 \tableofcontents
 
-\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
 \include{part}
 \include{chapter}
 
-\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
 \include{solutions}
 \printindex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
